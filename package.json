@@ -1,0 +1,25 @@
+{
+  "name": "exerc-cio-modulo-11---projeto-de-automa-o-de-ui",
+  "version": "1.0.0",
+  "description": "Exercício prático do Módulo 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul0costa/Exerc-cio-Modulo-11---Projeto-de-automa-o-de-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/paul0costa/Exerc-cio-Modulo-11---Projeto-de-automa-o-de-UI/issues"
+  },
+  "homepage": "https://github.com/paul0costa/Exerc-cio-Modulo-11---Projeto-de-automa-o-de-UI#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.18.0"
+  }
+}

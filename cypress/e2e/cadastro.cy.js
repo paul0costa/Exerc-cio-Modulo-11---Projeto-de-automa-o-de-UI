@@ -1,0 +1,28 @@
+/// <reference types="cypress" />
+import { faker } from '@faker-js/faker';
+
+describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
+
+    beforeEach(() => {
+        cy.visit('register.html')
+    });
+
+    it('Deve realizar um cadastro com sucesso, usando faker', () => {
+        let nome = faker.person.fullName()
+        let email = faker.internet.email()
+        cy.get('#name').type(nome)
+        cy.get('#email').type(email)
+        cy.get('#phone').type('123456789')
+        cy.get('#password').type('Senha123')
+        cy.get('#confirm-password').type('Senha123')
+        cy.get('#terms-agreement').check()
+        cy.get('#register-btn').click()
+        //Resultado esperado
+        cy.url().should('include', 'dashboard')
+        cy.get('#user-name').should('contain', nome)
+        cy.get('#logout-button').click()
+        //Resultado esperado
+    });
+
+
+});    
